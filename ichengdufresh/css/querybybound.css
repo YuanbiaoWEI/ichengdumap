@@ -1,0 +1,58 @@
+#menu {
+    position: absolute;
+    top:10px;
+    left:60px;
+    width: 289px;
+    height: 42px;
+    border-radius: 5px;
+    background-color: #6e9e00;
+}
+
+select {
+    margin-top: 2px;
+    margin-left: 2px;
+    width: 130px;
+    height: 36px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+    border: 2px solid #6e9e00;
+}
+
+option{
+    margin-left: 5px;
+    font-family: "微软雅黑";
+}
+
+#querybutton {
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-top: 3px;
+    margin-left: 2px;
+    width: 60px;
+    height: 36px;
+    background: #90b800;
+    border: 2px solid #90b800;
+    color: #FFF;
+    border-radius: 5px 5px 5px 5px;
+    cursor: pointer;
+}
+
+#clearbutton {
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-top: 3px;
+    margin-left: 2px;
+    width: 80px;
+    height: 36px;
+    background: #90b800;
+    border: 2px solid #90b800;
+    color: #FFF;
+    border-radius: 5px 5px 5px 5px;
+    cursor: pointer;
+}
+
+select, button {
+    border: none;
+    outline: none;
+}

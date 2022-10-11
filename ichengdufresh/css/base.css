@@ -1,0 +1,243 @@
+﻿
+/*=S 基础设置*/
+body, html, div, ul, li, iframe, p, img {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    font-size: 14px;
+    color: #000;
+    font-family: "微软雅黑";
+}
+
+/*禁止文本选中*/
+#header .logo span, #header .logo img, .leftsidebar_box,.s1,.s2 {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+dl, dt, dd {
+    display: block;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+/*=E 基础设置*/
+
+/*=S 头部区域样式 */
+#header {
+    width: 100%;
+    height: 50px;
+    z-index: 3;
+    position: absolute;
+    background-color: #487215;
+}
+
+    #header .logo {
+        height: 50px;
+        float: left;
+        margin-top: 6px;
+        margin-left: 20px;
+        position: absolute;
+    }
+
+        #header .logo img {
+            height: 35px;
+            width: 35px;
+        }
+
+        #header .logo #name {
+            display: block;
+            float: right;
+            color: #fff;
+            font-size: 140%;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin: 5px 10px;
+            border-left: groove 1px rgba(255,255,255,0.5);
+            padding-left: 11px;
+        }
+        
+        #header #time{
+            display: block;
+            position: absolute;
+            margin-left: 330px;
+            margin-top: 20px;
+            color: #fff;
+            font-size: 30%;
+            border-left: groove 1px rgba(255,255,255,0.5);
+        }
+/*=E 头部区域样式 */
+
+/*=S 主体框架 */
+#content {
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    top: 49px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+/*=E 主体框架 */
+
+/*=S 导航部分left */
+.leftsidebar_box {
+    min-width: 220px;
+    height: 100% !important;
+    overflow-y: scroll;
+    position: absolute;
+    background-color: #ebfde2;
+}
+
+.leftsidebar_box dt {
+    padding-left: 42px;
+    padding-right: 31px;
+    background-repeat: no-repeat;
+    background-position: 13px center;
+    background-size: 15px;
+    background-color: #ebfde2;
+    color: black;
+    font-size: 14px;
+    position: relative;
+    line-height: 50px;
+    display: block;
+    cursor: pointer;
+}
+
+.homepage{
+    padding-left: 42px;
+    padding-right: 31px;
+    background-repeat: no-repeat;
+    background-position: 13px center;
+    background-size: 15px;
+    background-color: #ebfde2;
+    color: black;
+    font-size: 14px;
+    position: relative;
+    line-height: 50px;
+    display: block;
+    cursor: pointer;
+}
+
+
+.leftsidebar_box dl {
+    border-bottom: groove 1px rgba(255,255,255,0.5);
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.leftsidebar_box dd {
+    background-color: #ebfde2;
+    padding-left: 38px;
+    height: 34px;
+    line-height: 34px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+    .leftsidebar_box dd:before {
+        border-bottom: 1px dotted #b0b5c2;
+        content: "";
+        display: inline-block;
+        float: left;
+        width: 15px;
+        margin: -14px 0 0;
+        height: 32px;
+        border-left: 1px dotted #b0b5c2;
+        position: absolute;
+        left: 25px;
+    }
+
+    .leftsidebar_box dd:hover {
+        color: #63b400;
+        font-weight: bold;
+        background-color:#c4ffa6
+    }
+
+    .leftsidebar_box dt:hover {
+        color: rgb(99, 180, 0);
+        font-weight: bold;
+        background-color:#c4ffa6
+    }
+
+.leftsidebar_box dt img {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+}
+
+.leftsidebar_box dt {
+    background-image: url(../img/left/AddSign.png);
+}
+
+.homepage img{
+    position: absolute;
+    right: 10px;
+    top: 20px;
+}
+
+.homepage {
+    background-image: url(../img/left/homepage.png);
+}
+
+.leftsidebar_box dl dd:last-child {
+    padding-bottom: 10px;
+}
+/*=E 导航部分left */
+
+/*=S 地图容器部分 */
+.iframe_wrapper {
+    width: auto;
+    height: 100%;
+    border: none;
+    z-index: 1;
+    margin-left: 690px;
+    position: relative;
+    top: 0;
+    bottom: 0;
+}
+
+#container_iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    z-index: 1;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    background: #fff;
+}
+/*=E 地图容器部分 */
+
+/*=S 滚动条样式部分*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px #d1cfcf;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 12px;
+    background: #f7f7f7;
+    -webkit-box-shadow: inset 0 0 6px #d1cfcf;
+}
+/*=E 滚动条样式部分*/
+

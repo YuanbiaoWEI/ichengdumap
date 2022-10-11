@@ -1,0 +1,30 @@
+#menu {
+    position: absolute;
+    top:10px;
+    left:60px;
+    width: 135px;
+    height: 42px;
+    border-radius: 5px;
+    background-color: #6e9e00;
+}
+
+select {
+    margin-top: 3px;
+    margin-left: 2px;
+    width: 130px;
+    height: 36px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid #6e9e00;
+}
+
+option{
+    margin-left: 5px;
+    font-family: "微软雅黑";
+    cursor: pointer;
+}
+
+select, button {
+    border: none;
+    outline: none;
+}

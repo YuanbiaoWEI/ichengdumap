@@ -1,0 +1,7 @@
+.ol-popup-closer {
+    text-decoration: none;
+    position: absolute;
+    top: 2px;
+    right: 8px;
+    color: rgb(76, 76, 76);
+}

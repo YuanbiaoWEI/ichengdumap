@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>成都市生鲜冷链服务系统</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <link type="text/css" rel="stylesheet" href="css/base.css" />
+    
+    <!-- 开源库jquery -->
+    <script src="libs/jquery-1.11.2.min.js"></script>
+    <!-- 自定义首页初始化JS -->
+    <script type="text/javascript" src="js/InitalPage.js"></script>
+    <link rel="icon" href="img/logo/fresh_fruit.ico">
+</head>
+<body>
+    <div id="header">
+        <a class="logo" href="index.html">
+            <img src="img/logo/fresh_fruit.svg" />            
+            <span id="name"> 成都市生鲜冷链服务系统 </sapn>
+        </a>
+        <span id="time"></span>
+    </div>
+    <div id="content">
+        <div class="leftsidebar_box">
+            <dl class="homepage" onclick="refreshpage()">
+                系统首页
+            </dl>
+            <dl>
+                <dt class="first_dt">门店查询</dt>
+                <dd onclick="setCore('QuerybyBound')">框选查询</dd>
+                <dd onclick="setCore('QuerybyName')">店名查询</dd>
+                <dd onclick="setCore('QuerybyGroup')">生鲜查询</dd>
+            </dl>
+            <dl>
+                <dt class="first_dt">配送导航</dt>
+                <dd onclick="setCore('ClosestShop')">调配最近门店往目的地</dd>
+            </dl>
+            <dl>
+                <dt class="first_dt">门店分析</dt>
+                <dd onclick="setCore('ServiceArea')">本市所有门店服务范围</dd>
+                <dd onclick="setCore('HeatMap')">本市门店分布热力图</dd>
+                <dd onclick="setCore('VegHeatMap')">本市生鲜分布热力图</dd>
+            </dl>
+        </div>
+        <div class="iframe_wrapper">
+            <iframe id="container_iframe" name="container_iframe" scrolling="no"></iframe>
+        </div>
+        <div id="popup" class="ol-popup">
+            <div id="popup-content"></div>
+        </div>
+    </div>
+  </div>
+</body>
+</html>

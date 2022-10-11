@@ -1,0 +1,102 @@
+.mapCon {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+/* 缩放滑块控件ZoomSlider的样式，放置到缩放按钮之间实现导航条功能*/
+#mapCon .ol-zoom .ol-zoom-out {
+    margin-top: 204px;
+}
+
+#mapCon .ol-zoomslider {
+    background-color: transparent;
+    top: 2.3em;
+}
+
+#mapCon .ol-touch .ol-zoom .ol-zoom-out {
+    margin-top: 212px;
+}
+
+#mapCon .ol-touch .ol-zoomslider {
+    top: 2.75em;
+}
+
+#mapCon .ol-zoom-in .ol.has-tooltip:hover[role=tooltip],
+#mapCon .ol-zoom-in .ol-has-tooltip:focus[role=tooltip] {
+    top: 3px;
+}
+
+#mapCon .ol-zoom-out .ol-has-tooltip:hover[role=tooltip],
+#mapCon .ol-zoon-out .ol-has-out-tooltip:focus[role=tooltip] {
+    top: 232px;
+}
+
+#mapCon .ol-zoom-extent {
+    top: 280px;
+}
+
+/* 地图弹窗样式*/
+.ol-popup {
+    position: absolute;
+    background-color: white;
+    -webkit-filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.2));
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #cccccc;
+    bottom: 12px;
+    left: -50px;
+    min-width: 120px;
+}
+
+.ol-popup:after, .ol-popup:before {
+    top: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.ol-popup:after {
+    border-top-color: white;
+    border-width: 10px;
+    left: 48px;
+    margin-left: -10px;
+}
+
+.ol-popup:before {
+    border-top-color: #cccccc;
+    border-width: 11px;
+    left: 48px;
+    margin-left: -11px;
+}
+
+#coordinates{
+    background: #75a80088;
+    position: absolute;
+    top : 10px;
+    right : 20px;
+    width: 230px;
+    height: 35px;
+    border-radius: 5px 5px 5px 5px;
+    color: aliceblue;
+    font-family: "微软雅黑";
+}
+#coordinates label{
+    position: absolute;
+    margin-top: 7.5px;
+    margin-left: 6px;
+    color: aliceblue;
+    font-family: "微软雅黑";
+}
+
+#north img{
+    position: absolute;
+    top : 13px;
+    right : 260px;
+    width: 30px;
+    height: 30px;
+}

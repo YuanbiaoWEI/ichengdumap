@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>chengdumap</title>
+    <link href="../css/chengdumap.css" rel="stylesheet" type="text/css" />
+    <link href="../css/system.css" rel="stylesheet" type="text/css" />
+
+    <!-- 开源jQuery库 -->
+    <script src="../libs/jquery-1.11.2.min.js" type="text/javascript"></script>
+    
+    <!-- iClient ol库 -->
+    <script  include="echarts" src="../../dist/ol/include-ol.js" type="text/javascript"></script>
+
+    <!-- echart主题库 -->
+    <script src="../libs/wonderland.js" type="text/javascript"></script>
+
+</head>
+<body>
+    <div id="ShopNum" style="z-index: 3">
+        <div id="chartcontrol" class="chartcontrol"></div>
+    </div>
+    <div id="mostchoices">
+            <img src="../img/list/mostchoices.png" width="227" height="auto" style="z-index: 2"/>
+    </div>
+    <div id="mostcheap">
+            <img src="../img/list/mostcheap.png" width="227" height="auto" style="z-index: 2"/>
+    </div>
+    <!--地图-->
+    <div id="popup" class="ol-popup">
+        <div id="popup-content"></div>
+    </div>
+    <div id="mapCon" class="mapCon">
+        <div id="coordinates" style="z-index: 2;">
+            <label>经纬度：</label>
+        </div>
+        <div id="north" style="z-index: 2;">
+            <img src="../img/north/north.png" style="z-index: 2;"></img>
+        </div>
+    </div>
+    <script type="text/javascript" src="../js/ChengDuMapLoader.js"></script>
+</body>
+</html>

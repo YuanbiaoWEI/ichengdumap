@@ -1,0 +1,92 @@
+#rightbox{
+    background: rgb(176,204,111);
+    position: absolute;
+    top : 55px;
+    right : 20px;
+    width: 230px;
+    height: 540px;
+    border-radius: 5px 5px 5px 5px;
+    color: aliceblue;
+    font-family: "微软雅黑";
+    box-shadow: 0 3px 14px rgba(0,0,0,0.4);
+}
+
+.mytable {
+    margin-left: 15px;
+    width: 90%;
+}
+
+.mytable td {
+    padding: 4px;
+    font-weight: bold;
+    border: 1px solid #FFF;
+    border-collapse:collapse;
+}
+
+.mytable th {
+    background-color: #2d8b10;
+    color: #FFF;
+    font-weight: bold;
+}
+
+.mytable tbody {
+    display:block;
+    height:400px;
+    overflow-y:scroll;
+}
+
+.mytable thead, tbody tr {
+    display:table;
+    width:100%;
+    table-layout:fixed;
+}
+
+.mytabletitle {
+    margin-top: 60px;
+    margin-left: 0px;
+    width: 90%;
+}
+
+.mytabletitle td {
+    color: rgb(0, 116, 8);
+    font-size: 7;
+    font-weight: bold;
+    text-align: center;
+}
+
+#ShopNum{
+    position: absolute;
+    top: 60px;
+    right: 14px;
+    text-align: left;
+    background: rgb(251, 255, 242);
+    color: rgb(255, 255, 255);
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 3px 14px rgba(0,0,0,0.4);
+}
+
+.chartcontrol{
+    margin-top: 10px;
+    margin-left: 5px;
+    /*color: #74a44d;*/
+}
+
+
+
+#mostchoices img{
+    position: absolute;
+    top: 278px;
+    right: 14px;
+    background: rgb(251, 255, 242);
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 3px 14px rgba(0,0,0,0.4);
+}
+
+#mostcheap img{
+    position: absolute;
+    top: 460px;
+    right: 14px;
+    background: rgb(251, 255, 242);
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 3px 14px rgba(0,0,0,0.4);
+}
